@@ -4,12 +4,17 @@
 
 Compare the performance of standard Covariance Matrix Adaptation Evolution Strategy (CMA-ES) with CMA-ES using average fitness implementation.
 
-Concept: 
+## Concept
 1. The baseline is to run some independent trials of CMA-ES, each starting from a different random start point.  
 2. CMA-ES invokes a function to determine the fitness at the location x -- i.e. f(x).  Instead of x, we will use x1, x2, x3, ..., xn where n = 10 (for starters).  
 3. Each of these n solutions is created by adding a number in the range of [-r,+r] that is drawn from a uniform distribution to each term of x.  For starters, r can be 10% of the search space, so r = 10.  Then, favg(x) = f(x1) + f(x2) + f(x3) + ... + f(xn) / n
 4. After CMA-ES with average fitness finishes, we should use that point as the start point for standard CMA-ES with a small sigma (~0.25).  That should hopefully get close to 0.
 5. Compare the result of the step 4 with the standard CMA-ES
+
+## Result
+OVerall, the result looks promising. Standard CMA-ES has an average performace around 50, and the average fitness has a final avergae performsnce less than 5
+The result can be seen [here](https://www.notion.so/result-986cbbdcc2ee48cab02abc3f6d5d3f7c)
+
 ## Installation
 
 Supported Python versions are 3.6 or later.
