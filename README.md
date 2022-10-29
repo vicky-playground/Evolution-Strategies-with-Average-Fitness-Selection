@@ -226,3 +226,4 @@ def rastrigin(x): # will put a list of points into the function
 
 **References:**
 * [1] [cmaes 0.8.2] (https://pypi.org/project/cmaes/)
+* [1] [A Collection of 30 Multidimensional Functions for Global Optimization Benchmarking] https://www.mdpi.com/2306-5729/7/4/46/htm
